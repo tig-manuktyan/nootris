@@ -1,0 +1,107 @@
+.second-section {
+    background-color: #111111;
+    padding: 70px 0;
+    @media (max-width: 992px) {
+        padding: 90px 0;
+    }
+    .second__container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-title {
+            font-weight: 700;
+            font-size: 48px;
+            margin-bottom: 60px;
+            margin-top: 20px;
+            @media (max-width: 768px) {
+                font-size: 40px;
+            }
+            @media (max-width: 468px) {
+                font-size: 30px;
+            }
+            span {
+                color: #fcb500;
+            }
+        }
+        .discount {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            span {
+                text-decoration: line-through;
+                color: #adadad;
+                font-size: 36px;
+            }
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin: 60px auto;
+            gap: 80px;
+            @media (max-width: 992px) {
+                flex-direction: column;
+            }
+            .small-item {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 45px;
+                    @media (max-width: 992px) {
+                        margin-bottom: 35px;
+                    }
+                }
+                p {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 18px;
+                    gap: 10px;
+                    span {
+                        color: #fcb500;
+                    }
+                }
+            }
+            .big-item {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 25px;
+                }
+                p {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 36px;
+                    gap: 10px;
+                    @media (max-width: 768px) {
+                        font-size: 32px;
+                    }
+                    @media (max-width: 468px) {
+                        font-size: 28px;
+                    }
+                    span {
+                        color: #fcb500;
+                        font-size: 24px;
+                        @media (max-width: 768px) {
+                            font-size: 20px;
+                        }
+                        @media (max-width: 468px) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        button {
+            background-color: #fcb500;
+            color: #000;
+            padding: 16px 52px;
+            width: fit-content;
+            border-radius: 7px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+        }
+    }
+}
